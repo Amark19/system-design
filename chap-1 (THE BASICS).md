@@ -38,6 +38,7 @@ But isn't it so redundant work ?everytime making request to domain name provider
 
 ## http request 
 application level protocol helps us to request files,data from server that follows client-server model.While sending this request it has something as request head which has all information such as whom to request,ip that is requesting.Also has request body which holds the actual data that is requested or recieved
+
 ![image](https://user-images.githubusercontent.com/71604396/230789033-d3e8f143-3493-403c-af0f-84d7b5a67473.png)
 
 ## REST API
