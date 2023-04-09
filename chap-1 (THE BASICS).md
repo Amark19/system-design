@@ -31,9 +31,43 @@ It is an improved version of OSI model
 - data link layer :- data framing and error prevention
 - physical layer :- generates data and requesting connection 
 
-##DNS
+## DNS
 Domain name system?why do we need it ?we know data exchange is always between ip's ryt?each website has its unique ip address but remembering ip of each website isn't it so hard task ? That's where domain name comes where mapping ip to domain name is to be done 256.123.980 -> example.com .
 When we type any domain in browser ,browser contacts to it dns provider gets ip then request files that are stored in resp. ip server .
 But isn't it so redundant work ?everytime making request to domain name provider & asking about ip?then in that case browser cache these ip so that it do not have to perform this task again.
 
-##http request 
+## http request 
+application level protocol helps us to request files,data from server that follows client-server model.While sending this request it has something as request head which has all information such as whom to request,ip that is requesting.Also has request body which holds the actual data that is requested or recieved
+![image](https://user-images.githubusercontent.com/71604396/230789033-d3e8f143-3493-403c-af0f-84d7b5a67473.png)
+
+## REST API
+It is api service to exchange data between two machines.Like it has few methods such as
+- get :- to get/fetch all data from web service
+- post :- send data to web service
+
+## graphQL
+api service introduced by facebook in 2015.Instead of making api calls for pull or push data to server here we make one single query & then select what all resources you want from response.
+
+## websockets
+- Type of protocol which is helpful to handle realtime data.ohhh what is realtime data ?It can be any continuous stream of data such as we get from chat application.
+- In chat application,at every second users send message to other users.So how can we handle that ? using api request ? that means at every second making api request & then requesting it from db to show msg to other users,isn't is so costlier?
+- websockets helps us to send or retrieve data within a single request no need to send multiple request at each update or message.
+
+# Database
+## SQL
+structure query language which helps us to make database query.Mysql is a database that uses sql as language to make query to stored,pull,insert data
+
+## ACID
+- Atomicity :- all or everything i.e either transaction take place or not take place,can't be partial transaction
+- consistency :- data should be consistent that mean if user is withdrawing money then it should be reflected to all the bank servers
+- isolation :- concurrent or parallel transactions/queries should not cause conflicts
+- durability :- data once updated or added it should never be lost by database
+
+## NoSQl
+non relation database that means data will not be stored in fixed tables either it can be stored as graph nodes,documents e.g firebase firestore,mongodb
+
+## Cap theorem
+- consistency :- every node in network should see same data
+- availability :- every request should get response..d
+- parition reference :- system should work continuously even if there are some failures as well
+fun fact :- cap thm itself says that we can only achieve 2 of these among 3
