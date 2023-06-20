@@ -79,3 +79,9 @@ non relation database that means data will not be stored in fixed tables either 
 - availability :- every request should get response..d
 - parition reference :- system should work continuously even if there are some failures as well
 fun fact :- cap thm itself says that we can only achieve 2 of these among 3
+
+## Database sharding
+Database sharding is very important process in order to achieve scaling in a system.In this our database horizontally splits into small part subdatabases.So in such case our request to a server will not have to scan entire database in order search some value.You can request hash & that hash can easily map ur request to respected shard(splitted database part).
+Here is arch,for better understanding
+![image](https://github.com/Amark19/system-design/assets/71604396/61fe0486-dc94-486c-bec7-102fdc3662a5)
+
