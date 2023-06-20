@@ -82,6 +82,8 @@ fun fact :- cap thm itself says that we can only achieve 2 of these among 3
 
 ## Database sharding
 Database sharding is very important process in order to achieve scaling in a system.In this our database horizontally splits into small part subdatabases.So in such case our request to a server will not have to scan entire database in order search some value.You can request hash & that hash can easily map ur request to respected shard(splitted database part).
-Here is arch,for better understanding
-![image](https://github.com/Amark19/system-design/assets/71604396/61fe0486-dc94-486c-bec7-102fdc3662a5)
+Here is arch,for better understanding.
+
+![DB_image_1_cropped](https://github.com/Amark19/system-design/assets/71604396/8382c5d0-42a5-46c6-bbb3-22c2b562a34c)
+
 
