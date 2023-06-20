@@ -24,10 +24,10 @@ caching is basically storing data in cache memory that is requested quite freque
 
 # services
 ## monolith
-Entire application is built as single unity no separated units are decomposed here unlike microservices.Whole business unit,logic is in same application.
+Entire application is built as single unity no separated units are decomposed here unlike microservices.Whole business unit,logic is in same application.Dveloped->deployed->scale in single codebase.
 
 ## microservices
-application basically decomposed/separate into collection small services.They can communicate with each other via API's.These are loosely coupled services.Separate services for separate unit of buisnesses.
+application basically decomposed/separate into collection small services.They can communicate with each other via API's.These are loosely coupled services.Separate services for separate unit of buisnesses.Developed->deployed->scale in different services/codebases.
 
 # Networking
 ## Tcp/ip model
