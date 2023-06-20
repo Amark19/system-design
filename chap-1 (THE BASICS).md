@@ -22,6 +22,13 @@ cdn helps us to serve static files such as images,videos & html/css/js files.SO 
 ## caching
 caching is basically storing data in cache memory that is requested quite frequently to reduce load time.
 
+# services
+## monolith
+Entire application is built as single unity no separated units are decomposed here unlike microservices.Whole business unit,logic is in same application.
+
+## microservices
+application basically decomposed/separate into collection small services.They can communicate with each other via API's.These are loosely coupled services.Separate services for separate unit of buisnesses.
+
 # Networking
 ## Tcp/ip model
 It is an improved version of OSI model
