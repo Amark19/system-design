@@ -12,6 +12,7 @@ Here you can see we have three major components
 - Publisher
 - msg broker()
 - Subscribers
+
 So, publisher publishes data to server now server push this data to message broker.Message broker breaks down this msges by topic(it's category of data to which msg refers to)
 And broadcast this msg to subscribers to which it belongs to. Here, subscribers don't poll data from server but msg broker make send them as soon as it is available.
 
